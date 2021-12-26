@@ -40,5 +40,9 @@
             android:id="@+id/nav_transport"
             android:icon="@drawable/transporte"
             android:title="Transort" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
     </group>
 </menu>
