@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pumis_clone.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.pumis_clone.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_timetable"
+        android:name="com.example.pumis_clone.ui.timetable.TimeTableFragment"
+        android:label="Time Table"
+        tools:layout="@layout/fragment_time_table" />
+
+    <fragment
+        android:id="@+id/nav_transcript"
+        android:name="com.example.pumis_clone.ui.transcript.TranscriptFragment"
+        android:label="Transcript"
+        tools:layout="@layout/fragment_transcript" />
+
+    <fragment
+        android:id="@+id/nav_attendence"
+        android:name="com.example.pumis_clone.ui.attendance.AttendanceFragment"
+        android:label="Attendance"
+        tools:layout="@layout/fragment_attendance" />
+
+    <fragment
+        android:id="@+id/nav_result"
+        android:name="com.example.pumis_clone.ui.result.ResultFragment"
+        android:label="Result"
+        tools:layout="@layout/fragment_result" />
+
+    <fragment
+        android:id="@+id/nav_fees"
+        android:name="com.example.pumis_clone.ui.fees.FeesFragment"
+        android:label="Academic Fees"
+        tools:layout="@layout/fragment_fees" />
+
+    <fragment
+        android:id="@+id/nav_hostel"
+        android:name="com.example.pumis_clone.ui.hostel.HostelFragment"
+        android:label="Hostel"
+        tools:layout="@layout/fragment_hostel" />
+
+    <fragment
+        android:id="@+id/nav_transport"
+        android:name="com.example.pumis_clone.ui.transport.TransportFragment"
+        android:label="Transport"
+        tools:layout="@layout/fragment_transport" />
+
+
+</navigation>

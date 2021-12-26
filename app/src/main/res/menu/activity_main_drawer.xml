@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homee"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profilee"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_timetable"
+            android:icon="@drawable/timetablee"
+            android:title="Time Table" />
+        <item
+            android:id="@+id/nav_transcript"
+            android:icon="@drawable/transcripte"
+            android:title="Transcript" />
+        <item
+            android:id="@+id/nav_attendence"
+            android:icon="@drawable/attendencee"
+            android:title="Attendence" />
+        <item
+            android:id="@+id/nav_result"
+            android:icon="@drawable/resulte"
+            android:title="Result" />
+        <item
+            android:id="@+id/nav_fees"
+            android:icon="@drawable/feese"
+            android:title="Academic Fees" />
+        <item
+            android:id="@+id/nav_hostel"
+            android:icon="@drawable/hostele"
+            android:title="Hostel" />
+        <item
+            android:id="@+id/nav_transport"
+            android:icon="@drawable/transporte"
+            android:title="Transort" />
+    </group>
+</menu>
