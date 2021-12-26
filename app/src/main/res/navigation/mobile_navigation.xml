@@ -11,53 +11,53 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_profile"
-        android:name="com.example.pumis_clone.ui.profile.ProfileFragment"
+        android:name="com.example.pumis_clone.ProfileActivity"
         android:label="Profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/activity_profile" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_timetable"
-        android:name="com.example.pumis_clone.ui.timetable.TimeTableFragment"
+        android:name="com.example.pumis_clone.TimeTableActivity"
         android:label="Time Table"
-        tools:layout="@layout/fragment_time_table" />
+        tools:layout="@layout/activity_timetable" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_transcript"
-        android:name="com.example.pumis_clone.ui.transcript.TranscriptFragment"
+        android:name="com.example.pumis_clone.TranscriptActivity"
         android:label="Transcript"
-        tools:layout="@layout/fragment_transcript" />
+        tools:layout="@layout/activity_transcript" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_attendence"
-        android:name="com.example.pumis_clone.ui.attendance.AttendanceFragment"
+        android:name="com.example.pumis_clone.AttendanceActivity"
         android:label="Attendance"
-        tools:layout="@layout/fragment_attendance" />
+        tools:layout="@layout/activity_attendance" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_result"
-        android:name="com.example.pumis_clone.ui.result.ResultFragment"
+        android:name="com.example.pumis_clone.ResultActivity"
         android:label="Result"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/activity_result" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_fees"
-        android:name="com.example.pumis_clone.ui.fees.FeesFragment"
+        android:name="com.example.pumis_clone.AcademicfeesActivity"
         android:label="Academic Fees"
-        tools:layout="@layout/fragment_fees" />
+        tools:layout="@layout/activity_academicfees" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_hostel"
-        android:name="com.example.pumis_clone.ui.hostel.HostelFragment"
+        android:name="com.example.pumis_clone.HostelActivity"
         android:label="Hostel"
-        tools:layout="@layout/fragment_hostel" />
+        tools:layout="@layout/activity_hostel" />
 
-    <fragment
+    <activity
         android:id="@+id/nav_transport"
-        android:name="com.example.pumis_clone.ui.transport.TransportFragment"
+        android:name="com.example.pumis_clone.TransportActivity"
         android:label="Transport"
-        tools:layout="@layout/fragment_transport" />
+        tools:layout="@layout/activity_transport" />
 
 
 </navigation>

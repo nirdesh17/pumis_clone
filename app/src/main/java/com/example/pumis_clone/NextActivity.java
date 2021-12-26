@@ -1,9 +1,12 @@
 package com.example.pumis_clone;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
@@ -27,13 +30,7 @@ public class NextActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarNext.toolbar);
-//        binding.appBarNext.fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+//
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -52,6 +49,53 @@ public class NextActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Invalid",Toast.LENGTH_SHORT).show();
         };
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int i=item.getItemId();
+                switch (i)
+                {
+                    case R.id.nav_profile:
+                        Intent intent1= new Intent(NextActivity.this,ProfileActivity.class);
+                        startActivity(intent1);
+                        break;
+                    case R.id.nav_timetable:
+                        Intent intent2= new Intent(NextActivity.this,TimeTableActivity.class);
+                        startActivity(intent2);
+                        break;
+                    case R.id.nav_transcript:
+                        Intent intent3= new Intent(NextActivity.this,TranscriptActivity.class);
+                        startActivity(intent3);
+                        break;
+                    case R.id.nav_attendence:
+                        Intent intent4= new Intent(NextActivity.this,AttendanceActivity.class);
+                        startActivity(intent4);
+                        break;
+                    case R.id.nav_result:
+                        Intent intent5= new Intent(NextActivity.this,ResultActivity.class);
+                        startActivity(intent5);
+                        break;
+                    case R.id.nav_fees:
+                        Intent intent6= new Intent(NextActivity.this,AcademicfeesActivity.class);
+                        startActivity(intent6);
+                        break;
+                    case R.id.nav_hostel:
+                        Intent intent7= new Intent(NextActivity.this,HostelActivity.class);
+                        startActivity(intent7);
+                        break;
+                    case R.id.nav_transport:
+                        Intent intent8= new Intent(NextActivity.this,TransportActivity.class);
+                        startActivity(intent8);
+                        break;
+                    default:
+                        break;
+                }
+
+
+                return false;
+            }
+        });
     }
 
     @Override

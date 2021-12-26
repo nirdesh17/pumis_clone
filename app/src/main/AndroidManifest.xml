@@ -10,6 +10,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PUMIS_Clone">
         <activity
+            android:name=".TransportActivity"
+            android:exported="true"
+            android:label="Transport"/>
+        <activity
+            android:name=".HostelActivity"
+            android:exported="true"
+            android:label="Hostel"/>
+        <activity
+            android:name=".AcademicfeesActivity"
+            android:exported="true"
+            android:label="Academic Fees"/>
+        <activity
+            android:name=".ResultActivity"
+            android:exported="true"
+            android:label="Result"/>
+        <activity
+            android:name=".AttendanceActivity"
+            android:exported="true"
+            android:label="Attendance"/>
+        <activity
+            android:name=".TranscriptActivity"
+            android:exported="true"
+            android:label="Transcript"/>
+        <activity
+            android:name=".TimeTableActivity"
+            android:exported="true"
+            android:label="Time Table"/>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:label="Profile"/>
+        <activity
             android:name=".NextActivity"
             android:exported="true"
             android:label="@string/title_activity_next"
