@@ -90,8 +90,8 @@
         android:layout_marginTop="164dp"
         android:backgroundTint="#F2FF5722"
         android:ems="10"
-        android:hint="Enrollment"
-        android:inputType="number"
+        android:hint="Permanent mail id"
+        android:inputType="textWebEmailAddress"
         android:minHeight="48dp"
         android:paddingLeft="20sp"
         android:shadowColor="#F2FF5722"
@@ -125,19 +125,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Enrollment" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="200dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#FAF7F7"
-        android:paddingLeft="10sp"
-        android:text="Remember Me"
-        android:textColor="#F2FF5722"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/Password"
-        app:layout_constraintTop_toBottomOf="@+id/Password"
-        tools:ignore="TouchTargetSizeCheck" />
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkBox"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:backgroundTint="#FAF7F7"-->
+<!--        android:paddingLeft="10sp"-->
+<!--        android:text="Remember Me"-->
+<!--        android:textColor="#F2FF5722"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/Password"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/Password"-->
+<!--        tools:ignore="TouchTargetSizeCheck" />-->
 
     <Button
         android:id="@+id/button"
@@ -156,7 +156,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
         app:strokeColor="#000000" />
 
 

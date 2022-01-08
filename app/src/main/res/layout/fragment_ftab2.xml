@@ -67,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/address"
         android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginStart="20dp"
@@ -79,43 +79,43 @@
         app:layout_constraintTop_toTopOf="@+id/textView11" />
 
     <TextView
-        android:id="@+id/textView37"
+        android:id="@+id/city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mumbai"
         android:textColor="@color/grey"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintStart_toStartOf="@+id/address"
         app:layout_constraintTop_toTopOf="@+id/textView24" />
 
     <TextView
-        android:id="@+id/textView38"
+        android:id="@+id/district"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mumbai"
         android:textColor="@color/grey"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView37"
+        app:layout_constraintStart_toStartOf="@+id/city"
         app:layout_constraintTop_toTopOf="@+id/textView25" />
 
     <TextView
-        android:id="@+id/textView39"
+        android:id="@+id/state"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Maharastra"
         android:textColor="@color/grey"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView38"
+        app:layout_constraintStart_toStartOf="@+id/district"
         app:layout_constraintTop_toTopOf="@+id/textView26" />
 
     <TextView
-        android:id="@+id/textView40"
+        android:id="@+id/country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="India"
         android:textColor="@color/grey"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView39"
+        app:layout_constraintStart_toStartOf="@+id/state"
         app:layout_constraintTop_toTopOf="@+id/textView28" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

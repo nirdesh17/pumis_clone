@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1095545370936",
+    "project_id": "pumis-clone",
+    "storage_bucket": "pumis-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095545370936:android:148d567bf48f8c761769cd",
+        "android_client_info": {
+          "package_name": "com.example.pumis_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095545370936-56gqtvcnlgs1tp4a98becek2cqnu666d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsX1y1idj4dSw33spHAP_HdF13ZWG_VPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095545370936-56gqtvcnlgs1tp4a98becek2cqnu666d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

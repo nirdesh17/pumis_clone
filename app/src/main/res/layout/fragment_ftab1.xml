@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/course"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -56,23 +56,23 @@
         app:layout_constraintTop_toTopOf="@+id/textView12" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/branch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BE-CSE"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/course"
         android:textColor="@color/grey"
         android:textSize="22sp"
         app:layout_constraintTop_toTopOf="@+id/textView13" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/sem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="4"
         android:textColor="@color/grey"
         android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/branch"
         app:layout_constraintTop_toTopOf="@+id/textView14" />
 
     <TextView
@@ -83,7 +83,7 @@
         android:textSize="22dp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toTopOf="@+id/textView16" />
+        app:layout_constraintTop_toTopOf="@+id/branch" />
 
     <TextView
         android:id="@+id/textView19"
@@ -93,8 +93,8 @@
         android:text="Roll No"
         android:textColor="@color/white"
         android:textSize="22dp"
-        app:layout_constraintStart_toEndOf="@+id/textView15"
-        app:layout_constraintTop_toTopOf="@+id/textView15" />
+        app:layout_constraintStart_toEndOf="@+id/course"
+        app:layout_constraintTop_toTopOf="@+id/course" />
 
     <TextView
         android:id="@+id/textView20"
@@ -104,10 +104,10 @@
         android:textSize="22dp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/textView18"
-        app:layout_constraintTop_toTopOf="@+id/textView17" />
+        app:layout_constraintTop_toTopOf="@+id/sem" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/roll_no"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -118,22 +118,22 @@
         app:layout_constraintTop_toTopOf="@+id/textView19" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/division"
         android:layout_width="101dp"
         android:layout_height="44dp"
         android:text="4B1_AI_202122"
         android:textColor="@color/grey"
         android:textSize="15dp"
-        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintStart_toStartOf="@+id/roll_no"
         app:layout_constraintTop_toTopOf="@+id/textView18" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/batch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2"
         android:textSize="22dp"
         android:textColor="@color/grey"
-        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/division"
         app:layout_constraintTop_toTopOf="@+id/textView20" />
 </androidx.constraintlayout.widget.ConstraintLayout>

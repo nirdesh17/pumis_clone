@@ -4,8 +4,17 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -13,6 +22,11 @@ import androidx.fragment.app.Fragment;
  * create an instance of this fragment.
  */
 public class Ftab1 extends Fragment {
+
+    TextView t1,t2,t3,t4,t5,t6;
+    FirebaseAuth fAuth;
+    FirebaseFirestore fStore;
+    String userid;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -48,16 +62,50 @@ public class Ftab1 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
+
         return inflater.inflate(R.layout.fragment_ftab1, container, false);
+
+
+    }
+    @Override
+    public void onViewCreated(@Nullable View view,@Nullable Bundle savedInstanceSate)
+    {
+        super.onViewCreated(view, savedInstanceSate);
+        t1=view.findViewById(R.id.course);
+        t2=view.findViewById(R.id.branch);
+        t3=view.findViewById(R.id.sem);
+        t4=view.findViewById(R.id.roll_no);
+        t5=view.findViewById(R.id.division);
+        t6=view.findViewById(R.id.batch);
+
+        fAuth=FirebaseAuth.getInstance();
+        fStore=FirebaseFirestore.getInstance();
+        userid=fAuth.getCurrentUser().getUid();
+
+        DocumentReference documentReference = fStore.collection("users").document(userid);
+        documentReference.addSnapshotListener(new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
+                t1.setText(documentSnapshot.getString("course"));
+                t2.setText(documentSnapshot.getString("branch"));
+                t3.setText(documentSnapshot.getString("Sem"));
+                t4.setText(documentSnapshot.getString("Roll No"));
+                t5.setText(documentSnapshot.getString("Division"));
+                t6.setText(documentSnapshot.getString("batch"));
+            }
+        });
+
     }
 }

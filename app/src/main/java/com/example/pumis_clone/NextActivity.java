@@ -16,6 +16,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.pumis_clone.databinding.ActivityNextBinding;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class NextActivity extends AppCompatActivity {
 
@@ -30,7 +31,7 @@ public class NextActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarNext.toolbar);
-//
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -87,6 +88,9 @@ public class NextActivity extends AppCompatActivity {
                     case R.id.nav_transport:
                         Intent intent8= new Intent(NextActivity.this,TransportActivity.class);
                         startActivity(intent8);
+                    case R.id.nav_logout:
+                        FirebaseAuth.getInstance().signOut();
+
                         break;
                     default:
                         break;
@@ -111,8 +115,6 @@ public class NextActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
-    
-
 
 
 
